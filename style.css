@@ -1,0 +1,405 @@
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------navbar--------- */
+#navbar{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.navbar{
+    background: linear-gradient(to left,#368d,#653e);
+}
+.nav-img{
+    border-radius: 10em;
+    width: 50px;
+    height: auto;
+}
+
+.navbar-toggler{
+    color: #fff;
+}
+
+.nav-link{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgb(21, 172, 232);
+    text-align: center;
+    margin-right: 15px;
+}
+.nav-link:hover{
+    color: #333;
+}
+
+
+
+/* b */
+
+.nav-link{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color: rgb(28, 38, 51);
+    background: rgb(21, 172, 232);
+    box-shadow: 0 0 10px rgb(21, 172, 232), 0 0 10px #2196f3, 0 0 10px #2196f3;
+    transition-delay: 1s;
+}
+.nav-link span{
+    position: absolute;
+    display: block;
+}
+
+
+
+
+
+.nav-link span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(21, 172, 232));
+}
+.nav-link:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+
+
+.nav-link span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.nav-link:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+.nav-link span:nth-child(2){
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.nav-link:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.nav-link span:nth-child(4){
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.nav-link:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* ----------------curosel---------- */
+#carousel{
+    background: url('img/carosel-bg.jpg') no-repeat;
+    background-position: center;
+    height: 100vh;
+   background-size: cover; 
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   
+}
+.bg-img{
+    background:#333;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.curosel-imge{
+    height: 500px;
+    width: 850px;
+    margin:0 auto;
+    
+}
+.curosel-img{
+    height: 500px;
+    width: 100%;
+    border-radius: 2em;
+}
+
+
+
+
+/* ---------------banner--------- */
+#banner{
+    background: linear-gradient(207deg, rgba(131,255,155,1) 0%, rgba(198,40,142,0.2836484935771183) 100%);
+}
+
+.banner-img{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+}
+
+/* ---------details----------- */
+
+
+
+
+#deatls,#food{
+    background: linear-gradient(to left,#3654,#3564);
+    min-height: 100vh;
+    height: auto;
+
+}
+
+
+.deatails-img{
+    height: auto;
+    width: 100%;
+    border-radius: 2em;
+    box-shadow: 2px 1px 3px 2px;
+    margin-bottom: 20px;
+}
+
+.skill{
+    color: rgb(14, 145, 168);
+    text-decoration: none;
+    font-family: italic;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.skill ul li{
+    list-style: none;
+    color: purple;
+    font-size: 20px;
+    outline: 2px solid;
+    background-color: #3564;
+    cursor: pointer;
+}
+.skill ul li:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+#footer{
+    background-color:#333;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 15px;
+    
+}
+#footer .fa{
+ font-size: 40px;
+ padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------food-details----- */
+#food{
+    color: green;
+}
+.btn{
+    text-align: center;
+    display: inline-block;
+    
+}
+.btn:hover{
+    background-color: #fff;
+}
+.polau-Ingredients{
+   color: #fff;
+   display:flex;
+   padding: 20px 25px;
+   text-align: justify;
+}
+
+
+
+/* ----------my skill--------- */
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+
+.container .card{
+    position: relative;
+    width: 220px;
+    height: 250px;
+    background: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+
+}
+.container .card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.container .card .percent svg circle{
+        width: 100%;
+        height: 100%;
+        fill: transparent;
+        stroke-width: 2;
+        stroke: #191919;
+        transform: translate(5px, 5px);
+}
+.container .card .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+   
+
+}
+@keyframes fadeIn
+{
+    0%{
+            opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+
+}
+
+.number{
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.number h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.number h2 span{
+     font-weight: 300;
+     color: #fff;
+     font-size: 0.5em;
+}
+.number p{
+    font-weight: 300;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
